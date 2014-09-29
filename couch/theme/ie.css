@@ -1,0 +1,43 @@
+/* Copyright (c) 2013 smusikanth@gmail.com - Released under the MIT license: http://www.opensource.org/licenses/mit-license.php */
+
+
+/* Media Queries */
+@media(max-width:1024px){
+table.listing{display:table}
+.listing>thead{display:table}
+.listing>tbody{display:table}
+.listing th{display:table-cell}
+.listing td{display:table-cell}
+.listing tr{display:table-row}
+table.listing>thead>tr{display:table-row}
+table.listing tr:first-child td:first-child{border-top:1px solid #DCDCDC}
+table.listing tr td:first-child{border-color:#DCDCDC !important}
+table.listing td{position:relative;padding-top:4px;padding-bottom:4px;padding-left:5px !important;width:auto !important;border-color:#DCDCDC !important;text-align:inherit}
+table.listing tr td:before{position:static;display:none}
+table.listing td.actions{padding-bottom:4px}
+td.checkbox:before,
+td.name:before,
+td.comments-count:before,
+td.folder:before,
+td.folder-title:before,
+td.folder-name:before,
+td.pages-count:before,
+td.date:before,
+td.actions:before,
+td.user_name:before,
+td.display-name:before,
+td.email:before,
+td.role:before,
+td.up-down:before{content:""}
+
+/* Responsive Repeatable Regions */
+.tableholder{overflow-x:auto !important}
+.rr{width:770px !important}
+.rr>thead{display:table !important}
+.rr th{width:auto !important}
+.rr>tbody>tr{display:table-row !important;width:auto !important}
+.rr>tbody td{display:table-cell !important;width:auto !important}
+.rr td.delete{border-left:1px solid #CCC !important}
+.rr>tbody>tr:first-child>.dg-arrange-table-rows-drag-icon{border-top:1px solid #CCC !important}
+.rr>tbody>tr:last-child{border-radius:0 !important}
+}

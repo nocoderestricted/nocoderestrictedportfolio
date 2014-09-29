@@ -1,0 +1,77 @@
+/* Copyright (c) 2013 smusikanth@gmail.com - Released under the MIT license: http://www.opensource.org/licenses/mit-license.php */
+
+
+/* Remove or comment out the following line if you have a PRO license and want to rebrand the logo */
+#header>a{background:url(../logo.php) no-repeat 0 0}
+
+/* Custom Navigation Link Icons (Replace '5' with the tpl # of each template) */
+/* Clonable Template Example: .templates a[href$="tpl=5"]>img{background:url(images/icons/your_icon_here.png) no-repeat 0 0} */
+/* Non-clonable Template Example: .templates a[href*="tpl=5&"]:before{background:url(images/icons/your_icon_here.png) no-repeat 0 0;content:"";display:inline-block;margin-right:5px;width:16px;height:16px;line-height:16px;vertical-align:-3px} */
+
+/* Container - Left Align */
+/* div#container{margin:0 0 0 16px} */
+
+/* Colors */
+a{
+color:#0088CC
+}
+a:hover,a:focus{
+color:#005580
+}
+.active-template>a{
+background-color:#0088CC
+}
+.item:hover{
+border-color:#0088CC;
+box-shadow:0 0 5px rgba(0,105,214,.25)
+}
+input:focus,textarea:focus{
+border-color:rgba(82,168,236,.8);
+box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 4px rgba(82,168,236,.6)
+}
+form>input[name="k_login"],#btn_submit,#btn_submit2,#login #k_install,#login form[name="frm_forgotpass"] input[name="k_submit"]{
+background-color:#0074CC;
+background-image:-moz-linear-gradient(top, #0088CC, #0055CC);
+background-image:-ms-linear-gradient(top, #0088CC, #0055CC);
+background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#0088CC), to(#0055CC));
+background-image:-webkit-linear-gradient(top, #0088CC, #0055CC);
+background-image:linear-gradient(top, #0088CC, #0055CC);
+background-repeat:repeat-x;
+border-color:#0055CC #0055CC #003580;
+border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+color:#FFF;
+text-shadow:0 -1px 0 rgba(0,0,0,.25)
+}
+form>input[name="k_login"]:hover,form>input[name="k_login"]:focus,form>input[name="k_login"]:active,#btn_submit:hover,#btn_submit:focus,#btn_submit:active,#btn_submit2:hover,#btn_submit2:focus,#btn_submit2:active,#login #k_install:hover,#login #k_install:focus,#login #k_install:active,#login>form[name="frm_forgotpass"]>input:hover,#login>form[name="frm_forgotpass"]>input:focus,#login>form[name="frm_forgotpass"]>input:active{
+background-color:#0055CC;
+color:#FFF
+}
+
+/* Language */
+@media(max-width:1024px){
+td.checkbox:before{content:"Select"}
+td.name:before{content:"Title"}
+#frm_list_drafts td.name:before{content:"Original page"}
+td.comments-count:before{content:"Extras"}
+td.folder:before{content:"Folder"}
+#frm_list_drafts td.folder:before{content:"Template"}
+td.folder-title:before{content:"Folder Title"}
+td.folder-name:before{content:"Folder Name"}
+td.pages-count:before{content:"Pages"}
+td.date:before{content:"Date"}
+td.date.drafts:before{content:"Modified"}
+td.actions:before{content:"Actions"}
+td.user_name:before{content:"Name"}
+td.display-name:before{content:"Display Name"}
+td.email:before{content:"E-Mail"}
+td.role:before{content:"Role"}
+td.up-down:before{content:"Position"}
+}
+
+/* Extras */
+.message-container{padding:4px 12px;border:1px solid #E1E1E1;border-radius:4px}
+.iframe-analytics:first-child{margin-top:0}
+.iframe-analytics{width:700px;height:300px;overflow:hidden;margin-top:15px;border:1px solid #E1E1E1;border-radius:4px}
+@media(max-width:1032px){
+.iframe-analytics{width:454px;height:324px;overflow-x:auto;overflow-y:hidden}
+}

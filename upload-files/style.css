@@ -1,0 +1,28 @@
+.uploads div a{
+	display: block;
+	color: #000;
+}
+.bar{
+	width: 100%;
+	background: #eee;
+	padding: 3px;
+	margin-bottom: 10px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.bar-fill{
+	height: 20px;
+	display: block;
+	background: #fff000;
+	width: 0;
+	border-radius: 3px;
+	-webkit-transition: width 0.8s ease;
+	transition: width 0.8s ease;
+}
+.bar-fill-text{
+	color: #fff;
+	padding: 3px;
+}
+.uploads > a , .uploads span{
+	display: block;
+}

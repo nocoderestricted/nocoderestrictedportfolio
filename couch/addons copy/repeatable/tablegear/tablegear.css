@@ -1,0 +1,39 @@
+/* Copyright (c) 2013 smusikanth@gmail.com - Released under the MIT license: http://www.opensource.org/licenses/mit-license.php */
+
+
+.tableholder{overflow-x:auto}
+.rr{width:770px;table-layout:fixed;border-collapse:separate;border:1px solid #CCC;border-radius:4px}
+.rr th{padding:5px 10px;font-weight:bold;vertical-align:bottom;text-align:left}
+.dg-arrange-table-header,.rr th{background-color:#FAFAFA;background-image:-moz-linear-gradient(top, #FFF, #F5F5F5);background-image:-ms-linear-gradient(top, #FFF, #F5F5F5);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#F5F5F5));background-image:-webkit-linear-gradient(top, #FFF, #F5F5F5);background-image:linear-gradient(top, #FFF, #F5F5F5)}
+.dg-arrange-table-header{border-radius:4px 0 0 0}
+.rr>tbody td{border-top:1px solid #CCC;padding:10px;vertical-align:top}
+.rr tr:hover{background-color:#F5F5F5}
+span+a>.k_image_preview{max-width:100%;margin-top:0}
+.shim,.k_cell_deleted{display:none}
+.rr .odd{background-color:#FCFCFC}
+.rr td.delete{width:16px;border-left:1px solid #CCC;padding:10px 0}
+th.delete{border-radius:0 4px 0 0}
+.rr>tbody>tr:last-child>.delete{border-radius:0 0 4px 0}
+td.delete>input{display:none}
+td.delete>label{width:16px;margin:0 auto}
+span+a>img[src$="/upload-image.gif"]{width:100px;height:90px}
+.editable>div>div{width:auto !important;border-radius:0 0 4px 4px}
+.editable>div>input[type="text"][size="105"]{margin-bottom:0;width:97% !important}
+.editable>div>input[type="checkbox"],.editable>div>input[type="radio"]{display:inline-block;vertical-align:bottom;margin-right:4px}
+.editable>div>textarea{overflow:auto;height:130px;margin-bottom:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.editable>div>select{width:100%}
+.addRow{margin-top:10px;line-height:16px}
+.addRow>a{cursor:pointer;padding-left:20px;line-height:16px;background:url(add.png) no-repeat 0 0}
+
+/* Responsive Repeatable Regions */
+@media(max-width:1024px){
+.tableholder{overflow-x:visible}
+.rr{width:456px}
+.rr>thead{display:none}
+.rr th{width:auto !important}
+.rr>tbody>tr{display:block;width:454px}
+.rr>tbody td{display:block;width:434px !important;padding:10px !important}
+.rr td.delete{border-left:0}
+.rr>tbody>tr:first-child>.dg-arrange-table-rows-drag-icon{border-top:0}
+.rr>tbody>tr:last-child{border-radius:0 0 4px 4px}
+}

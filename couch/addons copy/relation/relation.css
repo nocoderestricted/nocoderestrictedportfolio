@@ -1,0 +1,11 @@
+/* Copyright (c) 2013 smusikanth@gmail.com - Released under the MIT license: http://www.opensource.org/licenses/mit-license.php */
+
+
+.checklist{max-height:182px;border:1px solid #CCC;overflow:auto;margin:0;padding:0;border-radius:4px}
+.checklist>li{list-style:none;margin:0;padding:0}
+.checklist>.alt{background-color:#FCFCFC}
+.checklist>.alt:first-child{border-radius:4px 4px 0 0}
+.checklist>li:last-child{border-radius:0 0 4px 4px}
+.checklist>li>label{display:block;padding:0 0 0 6px;margin:0;line-height:26px}
+.checklist>li>label>input{display:inline-block;margin:0 4px 0 0;vertical-align:middle}
+.checklist>li>label:hover,.checklist>li>label:focus{background-color:#F5F5F5}

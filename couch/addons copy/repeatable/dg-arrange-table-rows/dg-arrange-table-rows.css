@@ -1,0 +1,6 @@
+/* Copyright (c) 2013 smusikanth@gmail.com - Released under the MIT license: http://www.opensource.org/licenses/mit-license.php */
+
+
+.rr>tbody .dg-arrange-table-rows-drag-icon,.dg-arrange-table-header{width:5px;padding:10px 5px}
+.dg-arrange-table-rows-drag-icon{cursor:move;background-color:#DCDCDC}
+.dg-arrange-table-rows-insertion-marker{width:5px;height:8px;background:url(insert.png) no-repeat 1px 1px}
