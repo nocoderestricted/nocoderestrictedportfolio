@@ -95,7 +95,7 @@
 
 					</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="#">
 						<img src="assets/images/temp.jpg" title="#" alt="hi">
 							<div>
@@ -104,12 +104,12 @@
 								<p><span>Colors:</span><span class="coloredsquare"></span><span class="coloredsquare"></span><span class="coloredsquare"></span></p>
 
 							</div>
-					</a>
+					</a -->>
 				</li>
 			</ul>
 		</div>
 	</section>
-
+	
 
 	<section id="steps">
 		<div class="container">
@@ -135,60 +135,49 @@
 
 	<section id="contact-form">
 	<h3>Start A Project</h3>
+	<div id="errors">
+		<div class="container">
+			<p>You messed up somewhere! Let's try again.</p>
+		</div>
+		
+	</div>
+	<div id="succuess-errors">
+		<div class="container">
+			<p>I have recieved your message! Give me up to 24 hours for a response.</p>
+		</div>
+		
+	</div>
 		<div class="container">
 			
 			<cms:editable name="contact_intro" label="intro text" type="richtext">
 				<p>Plese contact me</p>
 			</cms:editable>
 			
-			<form id="contact">
-				<cms:form action='' method="post" id="contactMe">
+			<form id="contact" action="#" method="post">
 					<div>
 						<span><i class="fa fa-user"></i></span>
-						<cms:input type="text" name="name" id="name" placeholder='Name*' required="1" required/>
+						<input type="text" name="name" id="name" placeholder='Name*' required/>
 
 					</div>
 					
 					<div>
 						<span><i class="fa fa-envelope"></i></span>
-						<cms:input type="text" name="email" id="email" placeholder="Email*" required="1" vaildator="email" required/>
+						<input type="text" name="email" id="email" placeholder="Email*" required/>
 
 					</div>
 
 					<div>
 						<span><i class="fa fa-file-code-o"></i></span>
-						<cms:input type="text" name="website" id="website" placeholder="Your Current Website"/>
+						<input type="text" name="website" id="website" placeholder="Your Current Website"/>
 					</div>
 					<div>
 						<span><i class="fa fa-money"></i></span>
-						<cms:input type="text" name="buget" id="buget" placeholder="Your Projects Budget*" required="1" required/>
+						<input type="text" name="buget" id="buget" placeholder="Your Projects Budget*" required/>
 					</div>
 
-					<textarea placeholder="Tell us about your project!" name="comment" id="comment" required="1" required></textarea>
+					<textarea placeholder="Tell us about your project!" name="comment" id="comment" required></textarea>
 					
 					<input type="submit" id="submit" value="Submit" />
-
-				</cms:form>
-				<cms:if k_error_name>
-					<p style="display:block">Insert a name!</p>
-				</cms:if>
-
-				<cms:if k_error_email>
-					<p style="display:block">Insert an Email!</p>
-				</cms:if>
-				<cms:if k_error_budget>
-					<p style="display:block">Insert a Budget!</p>
-				</cms:if>
-				<cms:if k_error_comment>
-					<p style="display:block">Insert a Comment!</p>
-				</cms:if>
-				<cms:if k_success>
-					<p>Success!</p>
-					<cms:send_mail from=k_email_from to=k_email_to subject='Need a Website! Hurry!'>
-						Sent!
-						<cms:show k_success />
-					</cms:send_mail>
-				</cms:if>
 			</form>
 		</div>
 		
@@ -207,6 +196,7 @@
 <!-- scripts -->
 
 <script src="http://cdn.jsdelivr.net/jquery/1.11.1/jquery.js"></script>
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>

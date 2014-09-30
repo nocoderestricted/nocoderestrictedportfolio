@@ -395,8 +395,23 @@ header {
     font-weight: 700;
     background: #AE9361;
     padding: 1em 0 1em 3em;
-    border-bottom: 5px solid #91794b;
-    margin-bottom: .5em; }
+    border-bottom: 5px solid #91794b; }
+  #contact-form #errors {
+    width: 100%;
+    background: #c0392b;
+    margin-bottom: .5em;
+    color: #fff;
+    display: none; }
+    #contact-form #errors .container p {
+      color: #fff; }
+  #contact-form #succuess-errors {
+    width: 100%;
+    background: #AEE239;
+    margin-bottom: .5em;
+    color: #fff;
+    display: none; }
+    #contact-form #succuess-errors .container p {
+      color: #fff; }
   #contact-form .container p {
     font-size: 1.3em;
     font-weight: 400;
