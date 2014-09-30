@@ -46,7 +46,7 @@
                             name: $name,
                             email: $email,
                             website: $website,
-                            budet: $budget,
+                            budget: $budget,
                             comment: $comment
                         },
                         xhrFields: {
