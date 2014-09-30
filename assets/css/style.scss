@@ -25,6 +25,13 @@ header {
     max-height: 400px;
     background-color: $primary;
     #nav {
+        #mobile{
+            float: right;
+            cursor: pointer;
+            margin: 2.3em .5em;
+            color: $white;
+            display: none;
+        }
         padding: 1.4em 2em;
         .btn {
             margin: .5em;
@@ -207,7 +214,7 @@ header {
 #verbiage {
     .container {
         max-width: 800px;
-        padding: 8em 0;
+        padding: 8em 2em;
         p {
             font-size: 1.3em;
             font-weight: 400;
@@ -229,6 +236,7 @@ header {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 2em;
 }
 
 @-webkit-keyframes pulse {
@@ -431,29 +439,30 @@ header {
         background: $primary;
         padding: 1em 0 1em 3em;
         border-bottom: 5px solid darken($primary, 10);
-        
     }
-    #errors{
+    #errors {
         width: 100%;
         background: $red;
         margin-bottom: .5em;
         color: $white;
         display: none;
-        .container{
-            p{
+        .container {
+            p {
                 color: $white;
+                text-transform: capitalize;
             }
         }
     }
-    #succuess-errors{
+    #succuess-errors {
         width: 100%;
         background: $limegreen;
         margin-bottom: .5em;
         color: $white;
         display: none;
-        .container{
-            p{
+        .container {
+            p {
                 color: $white;
+                text-transform: capitalize;
             }
         }
     }
@@ -548,7 +557,7 @@ header {
         }
     }
     .container {
-        padding: 3em 0;
+        padding: 3em 2em;
         max-width: 800px;
         p {
             color: $grey;
@@ -563,6 +572,13 @@ header {
             text-decoration: none;
             border-bottom: 1px solid $primary;
         }
+        img{
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 1em;
+            max-width: 100%;
+        }
     }
 }
 
@@ -571,6 +587,7 @@ header {
     .container {
         max-width: 100%;
         overflow: hidden;
+        padding: 0;
         .moresteps {
             max-height: 300px;
             min-height: 300px;
@@ -628,3 +645,125 @@ header {
         }
     }
 }
+
+//////////////////////////////////////////////// Media queries
+
+
+
+  @media screen and (max-width: 825px){
+    header{
+        #nav{
+            #mobile{
+                display: block;
+            }
+            section{
+                z-index: 1;
+                position: fixed;
+                width: 200px;
+                height: 100%;
+                right: 0;
+                top: 0;
+                background: $grey;
+                float: none;
+                margin: 0;
+                display: none;
+                ul{
+                    li{
+                        display: block;
+                        float: none;
+                        background: $grey;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    #steps{
+        .container{
+            .moresteps{
+                float: none;
+                width: 100%;
+            }
+        }
+    }
+    #work{
+        div{
+            ul{
+                li{
+                    float: none;
+                    width: 100%; 
+                    min-height: 120px; 
+                    a{
+                        min-height: 120px;
+                        img{
+                           max-width: 100%; 
+                           float: left;
+                            min-height: 120px;
+                        }
+                        div{
+                            float: left;
+                            width: 45%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #contact-form{
+        .container{
+            form{
+                div{
+                    float: none;
+                    width: 100%;
+                    margin: 1em 0;
+                    input[type="text"],input[type="email"]{
+                        width: 90.9%;
+                    }
+
+                }
+                input[type="submit"]{
+                    margin: 1em 0;
+                    width: 100%;
+                }
+                textarea{
+                    margin: 0;
+                    width: 91%;
+                }
+            }
+        }
+    }
+
+
+  }
+
+  @media screen and (max-width: 1060px){
+
+    
+    #work{
+        div{
+            ul{
+                li{
+                    float: none;
+                    width: 100%; 
+                    min-height: 120px; 
+                    a{
+                        min-height: 120px;
+                        img{
+                           max-width: 100%; 
+                           float: left;
+                            min-height: 120px;
+                        }
+                        div{
+                            float: left;
+                            width: 45%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+  }

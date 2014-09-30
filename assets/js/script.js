@@ -1,45 +1,46 @@
-(function ($) {
-    $(document).ready(function () {
+(function($) {
+    $(document).ready(function() {
 
         var contactform = $("#contact");
 
 
-        contactform.on("submit", function(){
+        contactform.on("submit", function() {
 
             var $name = $("#name").val(),
                 $email = $("#email").val(),
                 $website = $("#website").val(),
                 $budget = $("#budget").val(),
-                $comment = $("#comment").val();
-            
-            function validateform(){
-                if($name == null || $name == ""){
+                $comment = $("#comment").val(),
+                $errors = $("#errors");
+
+            function validateform() {
+                if ($name ===null || $name === "") {
                     $("#errors").slideToggle();
-                    setTimeout(function(){
-                        $("#errors").slideToggle();
+                    setTimeout(function() {
+                        $errors.slideToggle();
                     }, 5000);
                     $("#errors > div > p").html("Seems like you left the name field blank.");
-                }else if($email == null || $email == ""){
-                    $("#errors").slideToggle();
-                    setTimeout(function(){
-                        $("#errors").slideToggle();
+                } else if ($email === null || $email === "") {
+                    $errors.slideToggle();
+                    setTimeout(function() {
+                        $errors.slideToggle();
                     }, 5000);
                     $("#errors > div > p").html("Seems like you left the email field blank.");
-                }else if($budget == null || $budget == ""){
-                    $("#errors").slideToggle();
-                    setTimeout(function(){
-                        $("#errors").slideToggle();
+                } else if ($budget === null || $budget === "") {
+                    $errors.slideToggle();
+                    setTimeout(function() {
+                        $errors.slideToggle();
                     }, 5000);
                     $("#errors > div > p").html("Seems like you left the budget field blank.");
-                }else if($comment == null || $comment == ""){
-                    $("#errors").slideToggle();
-                    setTimeout(function(){
-                        $("#errors").slideToggle();
+                } else if ($comment === null || $comment === "") {
+                    $errors.slideToggle();
+                    setTimeout(function() {
+                        $errors.slideToggle();
                     }, 5000);
                     $("#errors > div > p").html("Seems like you left the comment field blank.");
-                }else{
+                } else {
                     $.ajax({
-                        type:"post",
+                        type: "post",
                         url: "assets/xhr/mail.php",
                         dataType: "HTML",
                         data: {
@@ -50,27 +51,27 @@
                             comment: $comment
                         },
                         xhrFields: {
-                            onprogress: function (e) {
+                            onprogress: function(e) {
                                 if (e.lengthComputable) {
                                     // console.log(e.loaded / e.total * 100 + '%');
-                                    console.log(Math.round((e.loaded / e.total) * 100));
+                                    // console.log(Math.round((e.loaded / e.total) * 100));
                                 }
                             }
                         },
-                        success: function(response){
+                        success: function(response) {
                             console.log(response);
                             $("#succuess-errors").slideToggle();
-                            setTimeout(function(){
+                            setTimeout(function() {
                                 $("#succuess-errors").slideToggle();
                             }, 15000);
                         },
-                        error: function(jqXHR, textStatus, errorThrown){
+                        error: function(jqXHR, textStatus, errorThrown) {
 
                             $("#errors").slideToggle();
-                            setTimeout(function(){
+                            setTimeout(function() {
                                 $("#errors").slideToggle();
                             }, 15000);
-                            
+
                             console.log("textStatus: " + textStatus);
                             console.log("errorThrown: " + errorThrown);
 
@@ -81,7 +82,7 @@
             validateform();
             return false;
         });
-        
+
 
     });
 })(jQuery);

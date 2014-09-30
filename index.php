@@ -55,6 +55,9 @@
 					<li><a href="#">Start a Project</a></li>
 				</ul>
 			</section>
+			<div id="mobile">
+				<i class="fa fa-bars fa-3x"></i>
+			</div>
 		</nav>
 		<section id="slogan">
 			<h2 id="headSlogan">Who doesn‘t want to be on the Internet?</h2>
@@ -104,7 +107,7 @@
 								<p><span>Colors:</span><span class="coloredsquare"></span><span class="coloredsquare"></span><span class="coloredsquare"></span></p>
 
 							</div>
-					</a -->>
+					</a> -->
 				</li>
 			</ul>
 		</div>
@@ -187,8 +190,10 @@
 		<h4><span class="fa fa-comment-o"></span>Wanna Just talk?</h4>
 		<div class="container">
 			<p>Feel free to! I'm not anti-social. But, I'm probably sitting in the movie theater for 6 or more hours  seeing a double or 
-			a triple feaure! That's just something I enjoy doing! I apologize in advance if you're offend by this. Movie tickets is to expensive! <a href="#">Feel free to e-mail me here.</a>
+			a triple feaure! That's just something I enjoy doing! I apologize in advance if you're offend by this. Movie tickets is to expensive! <a href="mailto:donte@nocoderestricted.com">Feel free to e-mail me here.</a>
 			</p>
+			<img src="assets/images/ada_logo_wide_b.png" alt="American Diabetes logo" />
+			<p>One more thing you should know about me is; I'm a huge supporter of finding a cure to Diabetes (Type-1 to be exact). If you would like to donate to help <a href="https://donations.diabetes.org/site/Donation2?df_id=2540&2540.donation=form1&loc=wtg-slabnav&s_src=dorg&s_subsrc=one-timewtgslabnav" target="blank">please follow this link.</a> It would mean the world to me if they ever found one. </p>
 		</div>
 	</section>
 </div>

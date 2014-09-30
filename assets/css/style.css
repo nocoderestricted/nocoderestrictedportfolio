@@ -53,6 +53,12 @@ header {
   background-color: #AE9361; }
   header #nav {
     padding: 1.4em 2em; }
+    header #nav #mobile {
+      float: right;
+      cursor: pointer;
+      margin: 2.3em .5em;
+      color: #fff;
+      display: none; }
     header #nav .btn {
       margin: .5em;
       cursor: pointer;
@@ -221,7 +227,7 @@ header {
 
 #verbiage .container {
   max-width: 800px;
-  padding: 8em 0; }
+  padding: 8em 2em; }
   #verbiage .container p {
     font-size: 1.3em;
     font-weight: 400;
@@ -237,7 +243,8 @@ header {
 
 .container {
   max-width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 2em; }
 
 @-webkit-keyframes pulse {
   0% {
@@ -403,7 +410,8 @@ header {
     color: #fff;
     display: none; }
     #contact-form #errors .container p {
-      color: #fff; }
+      color: #fff;
+      text-transform: capitalize; }
   #contact-form #succuess-errors {
     width: 100%;
     background: #AEE239;
@@ -411,7 +419,8 @@ header {
     color: #fff;
     display: none; }
     #contact-form #succuess-errors .container p {
-      color: #fff; }
+      color: #fff;
+      text-transform: capitalize; }
   #contact-form .container p {
     font-size: 1.3em;
     font-weight: 400;
@@ -499,7 +508,7 @@ header {
       display: inline-block;
       margin-right: .5em; }
   #friends .container {
-    padding: 3em 0;
+    padding: 3em 2em;
     max-width: 800px; }
     #friends .container p {
       color: #7f8c8d;
@@ -512,12 +521,19 @@ header {
       color: #AE9361;
       text-decoration: none;
       border-bottom: 1px solid #AE9361; }
+    #friends .container img {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 1em;
+      max-width: 100%; }
 
 #steps {
   overflow: hidden; }
   #steps .container {
     max-width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 0; }
     #steps .container .moresteps {
       max-height: 300px;
       min-height: 300px;
@@ -562,5 +578,70 @@ header {
       padding: 1.3em 0;
       border-top: 1px solid #7f8c8d;
       color: #7f8c8d; }
+
+@media screen and (max-width: 825px) {
+  header #nav #mobile {
+    display: block; }
+  header #nav section {
+    z-index: 1;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #7f8c8d;
+    float: none;
+    margin: 0;
+    display: none; }
+    header #nav section ul li {
+      display: block;
+      float: none;
+      background: #7f8c8d;
+      text-align: center; }
+
+  #steps .container .moresteps {
+    float: none;
+    width: 100%; }
+
+  #work div ul li {
+    float: none;
+    width: 100%;
+    min-height: 120px; }
+    #work div ul li a {
+      min-height: 120px; }
+      #work div ul li a img {
+        max-width: 100%;
+        float: left;
+        min-height: 120px; }
+      #work div ul li a div {
+        float: left;
+        width: 45%; }
+
+  #contact-form .container form div {
+    float: none;
+    width: 100%;
+    margin: 1em 0; }
+    #contact-form .container form div input[type="text"], #contact-form .container form div input[type="email"] {
+      width: 90.9%; }
+  #contact-form .container form input[type="submit"] {
+    margin: 1em 0;
+    width: 100%; }
+  #contact-form .container form textarea {
+    margin: 0;
+    width: 91%; } }
+@media screen and (max-width: 1060px) {
+  #work div ul li {
+    float: none;
+    width: 100%;
+    min-height: 120px; }
+    #work div ul li a {
+      min-height: 120px; }
+      #work div ul li a img {
+        max-width: 100%;
+        float: left;
+        min-height: 120px; }
+      #work div ul li a div {
+        float: left;
+        width: 45%; } }
 
 /*# sourceMappingURL=style.css.map */
