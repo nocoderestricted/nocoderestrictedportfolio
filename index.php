@@ -156,13 +156,13 @@
 			<form id="contact" action="#" method="post">
 					<div>
 						<span><i class="fa fa-user"></i></span>
-						<input type="text" name="name" id="name" placeholder='Name*' required/>
+						<input type="text" name="name" id="name" placeholder='Name*'/>
 
 					</div>
 					
 					<div>
 						<span><i class="fa fa-envelope"></i></span>
-						<input type="text" name="email" id="email" placeholder="Email*" required/>
+						<input type="text" name="email" id="email" placeholder="Email*"/>
 
 					</div>
 
@@ -172,10 +172,10 @@
 					</div>
 					<div>
 						<span><i class="fa fa-money"></i></span>
-						<input type="text" name="buget" id="buget" placeholder="Your Projects Budget*" required/>
+						<input type="text" name="budget" id="budget" placeholder="Your Projects Budget*"/>
 					</div>
 
-					<textarea placeholder="Tell us about your project!" name="comment" id="comment" required></textarea>
+					<textarea placeholder="Tell us about your project!" name="comment" id="comment"></textarea>
 					
 					<input type="submit" id="submit" value="Submit" />
 			</form>

@@ -6,6 +6,7 @@ require_once '../../vendor/autoload.php';
 //form variables
 
 $name = $_POST["name"];
+$name = filter_var($name, FILTER_UNSAFE_RAW);
 
 $email = $_POST["email"];
 $email = trim($email);
@@ -16,6 +17,7 @@ $website = trim($website);
 $website = filter_var($website, FILTER_SANITIZE_URL);
 
 $budget = $_POST["budget"];
+$budget = filter_var($budget, FILTER_SANITIZE_NUMBER_INT);
 
 $comment = $_POST["comment"];
 $comment = preg_replace('#<[^>]+>#', ' ', $comment);
