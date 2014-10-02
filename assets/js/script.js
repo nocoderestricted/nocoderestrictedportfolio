@@ -1,8 +1,32 @@
 (function($) {
     $(document).ready(function() {
 
-        var contactform = $("#contact");
 
+
+        var contactform = $("#contact"),
+            mobileA = $(".mobilea");
+
+
+        mobileA.on("click", function(){
+
+
+
+            var slideoutmenu = $("#main-navigation"),
+                slideoutmenuwidth = $("#main-navigation").width();
+
+                slideoutmenu.toggleClass("open");
+
+                if (slideoutmenu.hasClass("open")) {
+                    slideoutmenu.animate({
+                        right: "0%"
+                    });
+                } else { 
+                    slideoutmenu.animate({
+                        right: -slideoutmenuwidth
+                    }, 250);    
+                }
+            return false;
+        });
 
         contactform.on("submit", function() {
 

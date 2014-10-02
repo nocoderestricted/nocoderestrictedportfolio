@@ -94,6 +94,8 @@ header {
       margin: 2.3em .5em; }
       header #nav section ul {
         overflow: hidden; }
+        header #nav section ul .close {
+          display: none; }
         header #nav section ul li {
           float: left;
           display: inline-block; }
@@ -584,22 +586,39 @@ header {
 @media screen and (max-width: 825px) {
   header #nav #mobile {
     display: block; }
-  header #nav section {
+    header #nav #mobile a {
+      color: #fff; }
+  header #nav .navigation {
     z-index: 1;
     position: fixed;
-    width: 200px;
+    width: 30%;
     height: 100%;
-    right: 0;
+    right: -30%;
     top: 0;
-    background: #7f8c8d;
+    overflow: hidden;
+    background: #AE9361;
     float: none;
     margin: 0;
-    display: none; }
-    header #nav section ul li {
+    transition: width 0.3s ease; }
+    header #nav .navigation ul .close {
+      display: block; }
+    header #nav .navigation ul li {
       display: block;
       float: none;
-      background: #7f8c8d;
-      text-align: center; }
+      text-align: left;
+      border-bottom: 1px solid #fff; }
+      header #nav .navigation ul li a {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em; }
+        header #nav .navigation ul li a i {
+          margin-right: .5em; }
+        header #nav .navigation ul li a:hover {
+          border: none;
+          background: #fff;
+          color: #AE9361; }
+        header #nav .navigation ul li a:active {
+          background: #fff;
+          color: #AE9361; }
 
   #steps .container .moresteps {
     float: none;
@@ -607,17 +626,13 @@ header {
 
   #work div ul li {
     float: none;
-    width: 100%;
-    min-height: 120px; }
-    #work div ul li a {
-      min-height: 120px; }
-      #work div ul li a img {
-        max-width: 100%;
-        float: left;
-        min-height: 120px; }
-      #work div ul li a div {
-        float: left;
-        width: 45%; }
+    width: 100%; }
+    #work div ul li a img {
+      max-width: 100%;
+      float: left; }
+    #work div ul li a div {
+      float: left;
+      width: 45%; }
 
   #contact-form .container form div {
     float: none;
@@ -634,16 +649,13 @@ header {
 @media screen and (max-width: 1060px) {
   #work div ul li {
     float: none;
-    width: 100%;
-    min-height: 120px; }
-    #work div ul li a {
+    width: 100%; }
+    #work div ul li a img {
+      max-width: 100%;
+      float: left;
       min-height: 120px; }
-      #work div ul li a img {
-        max-width: 100%;
-        float: left;
-        min-height: 120px; }
-      #work div ul li a div {
-        float: left;
-        width: 45%; } }
+    #work div ul li a div {
+      float: left;
+      width: 45%; } }
 
 /*# sourceMappingURL=style.css.map */

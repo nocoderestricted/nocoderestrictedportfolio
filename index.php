@@ -48,15 +48,17 @@
 				<h1><a href="#"><span>N.C.R</span></br>nocoderestricted</a></h1>
 				<div class="bg"></div>
 			</div>
-			<section>
+			<section id="main-navigation" class="navigation">
 				<ul>
+					<li><a href="#" class="close mobilea"><i class="fa fa-close"></i>Close</a></li>
 					<li><a href="#">Code Zone</a></li>
 					<li><a href="#">Contact</a></li>
 					<li><a href="#">Start a Project</a></li>
+					
 				</ul>
 			</section>
 			<div id="mobile">
-				<i class="fa fa-bars fa-3x"></i>
+				<a href="#" class="mobilea"><i class="fa fa-bars fa-3x"></i></a>
 			</div>
 		</nav>
 		<section id="slogan">
@@ -107,7 +109,7 @@
 								<p><span>Colors:</span><span class="coloredsquare"></span><span class="coloredsquare"></span><span class="coloredsquare"></span></p>
 
 							</div>
-					</a> -->
+					</a -->>
 				</li>
 			</ul>
 		</div>
@@ -192,8 +194,9 @@
 			<p>Feel free to! I'm not anti-social. But, I'm probably sitting in the movie theater for 6 or more hours  seeing a double or 
 			a triple feaure! That's just something I enjoy doing! I apologize in advance if you're offend by this. Movie tickets is to expensive! <a href="mailto:donte@nocoderestricted.com">Feel free to e-mail me here.</a>
 			</p>
-			<img src="assets/images/ada_logo_wide_b.png" alt="American Diabetes logo" />
-			<p>One more thing you should know about me is; I'm a huge supporter of finding a cure to Diabetes (Type-1 to be exact). If you would like to donate to help <a href="https://donations.diabetes.org/site/Donation2?df_id=2540&2540.donation=form1&loc=wtg-slabnav&s_src=dorg&s_subsrc=one-timewtgslabnav" target="blank">please follow this link.</a> It would mean the world to me if they ever found one. </p>
+			<img src="assets/images/ada_logo_wide_b.png" alt="American Diabetes"/>
+			<p>One more thing you should know about me is I'm a huge supporter of finding a cure to Diabetes (Type-1 to be exact). If you would like to donate
+			to help <a href="https://donations.diabetes.org/site/Donation2?df_id=2540&2540.donation=form1&loc=wtg-slabnav&s_src=dorg&s_subsrc=one-timewtgslabnav" target="blank">please follow this link.</a> It would mean the world to me if they ever found one. </p>
 		</div>
 	</section>
 </div>

@@ -73,6 +73,9 @@ header {
             margin: 2.3em .5em;
             ul {
                 overflow: hidden;
+                .close{
+                    display: none;
+                }
                 li {
                     float: left;
                     display: inline-block;
@@ -653,28 +656,55 @@ header {
 
 
   @media screen and (max-width: 825px){
+
     header{
         #nav{
             #mobile{
                 display: block;
+                a{
+                    color: $white;
+                }
             }
-            section{
+            
+            .navigation{
                 z-index: 1;
                 position: fixed;
-                width: 200px;
+                width: 30%;
                 height: 100%;
-                right: 0;
+                right: -30%;
                 top: 0;
-                background: $grey;
+                overflow: hidden;
+                background: $primary;
                 float: none;
                 margin: 0;
-                display: none;
+                transition: width 0.3s ease;
                 ul{
+                    .close{
+                        display: block;
+                    }
                     li{
                         display: block;
                         float: none;
-                        background: $grey;
-                        text-align: center;
+                        text-align: left;
+                        border-bottom: 1px solid $white;
+
+                        
+                        a{
+                            padding-top: 1.5em;
+                            padding-bottom: 1.5em;
+                            i{
+                                margin-right: .5em;
+                            }
+                            &:hover{
+                                border: none;
+                                background: $white;
+                                color: $primary;
+                            }
+                            &:active {
+                                background: $white;
+                                color: $primary;
+                            }
+                        }
                     }
                 }
             }
@@ -695,13 +725,10 @@ header {
                 li{
                     float: none;
                     width: 100%; 
-                    min-height: 120px; 
                     a{
-                        min-height: 120px;
                         img{
                            max-width: 100%; 
                            float: left;
-                            min-height: 120px;
                         }
                         div{
                             float: left;
@@ -749,9 +776,7 @@ header {
                 li{
                     float: none;
                     width: 100%; 
-                    min-height: 120px; 
                     a{
-                        min-height: 120px;
                         img{
                            max-width: 100%; 
                            float: left;
