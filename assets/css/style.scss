@@ -375,6 +375,7 @@ header {
                     }
                     img {
                         min-height: 212px;
+                        max-height: 212px;
                         width: 100%;
                     }
                 }
@@ -494,6 +495,15 @@ header {
                         font-size: 18px;
                         color: $grey;
                     }
+                }
+                input{
+                    -webkit-appearance: none; /*Safari/Chrome*/
+                    -moz-appearance: none; /*Firefox*/
+                    -ms-appearance: none; /*IE*/
+                    -o-appearance: none; /*Opera*/
+                    appearance: none;
+
+                    -webkit-border-radius: 0; 
                 }
                 input[type="text"], input[type="email"] {
                     text-indent: 23px;
@@ -650,11 +660,180 @@ header {
         }
     }
 }
+#movies{
+    #moviesearch{
+        width: 100%;
+        background: $lightgrey;
+        margin-bottom: 1em;
+        .container{
+            padding: 3em 0;
+            
+            form{
+                text-align: center;
+                label{
+                    display: block;
+                    font-weight: 800;
+                    font-size: 3em;
+                    margin-bottom: .5em;
+                    color: $primary;
+                }
+                input[type="text"]{
+                    text-indent: 23px;
+                    width: 99.5%;
+                    padding: 1em 0;
+                    font-size: 1.4em;
+                    border: 1px solid $grey;
+                    color: $grey;
+                    outline: none;
+                    @include transition(outline, 0.5s, ease);
+                    &:focus {
+                        outline: 2px solid $primary;
+                        @include transition(outline, 0.5s, ease);
+                    }
+                }  
+                input[type="submit"]{
+                    padding: 1em 2em;
+                    font-size: 1.4em;
+                    border: none;
+                    outline: none;
+                    float: left;
+                    background: $darkgreen;
+                    color: $white;
+                }
+            }
+            .searchdata{
+                clear: both;
+                h3{
+                    text-align: center;
+                    font-size: 2em;
+                    font-weight: 600;
+                    padding: 1em 0;
+                    span{
+                        font-weight: 800;
+                    }
+                }
+                .searchlist{
+                    overflow-y: scroll;
+                    height: auto;
+                    max-height: 180px;
+                }
+            }
+            
+        }
+    }
+    overflow: hidden;
+    .movieTile{
+        width: 30.33%;
+        float: left;
+        overflow: hidden;
+        // color: $primary;
+        margin: .5em 1%;
+        border: 2px solid $lightgrey;
+        .movieinfo{
+            background: #000;
+            float: left;
+            width: 100%;
+            min-height: 340px;
+            max-height: 340px;
+            .movieabout{
+                background: $white;
+                overflow: hidden;
+                 .mpaa{
+                    clear: both;
+                    text-align: center;
+                    padding: 1em 2em;
+                    font-weight: 700;
+                    color: $white;
+                    background: $primary;
+                    span{
+                        font-size: 2em;
+                        margin-top: .2em;
+                        display: inline-block;
+
+                    }
+                }
+            }
+            .movieImage{
+                max-width: 100%;
+                min-height: 177px;
+                min-width: 120px;
+                max-height: 177px;
+                display: block;
+                margin: 0 auto;
+
+            }
+            .movieTitle{
+                font-size: 1.6em;
+                padding: .3em 0 .3em 0;
+                font-weight: 700;
+                float: left;
+                background: $white;
+                width: 100%;
+                text-align: center;
+                color: $primary;
+                &:before{
+                    margin-right: .5em;
+                }
+                span{
+                    font-weight: normal;
+                    font-size: .7em;
+                    color: #000;
+                    margin-top: .6em;
+                    display: inline-block;
+                    &:before{
+                        margin-right: .3em;
+                    }
+                }
+            }  
+           
+            .score{
+                clear: both;
+                padding: 1.5em 0;
+                overflow: hidden;
+                background: $lightgrey;
+                text-align: center;
+                color: $primary;
+                div{
+                    float: left;
+                    width: 50%;
+                    h4{
+                        font-size: 1.6em;
+                        font-weight: 600;
+                        
+                    }
+                    .score-rating{
+                            padding-top: .5em;
+                            display: inline-block;
+                            font-size: 1.1em;
+                            font-weight: 400;
+                        }
+                }
+            }
+            p{
+                clear: both;
+                color: #000;
+                font-size: 1.2em;
+                line-height: 2.4;
+                height: 80px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-right: 1.2em;
+                padding-top: .7em; 
+            }
+        }
+        
+    }
+}
+    
 
 //////////////////////////////////////////////// Media queries
 
 
-
+    
   @media screen and (max-width: 825px){
 
     header{
@@ -764,8 +943,16 @@ header {
         }
     }
 
-
+    .movieTile{
+        width: 48% !important;
+    }
   }
+  @media screen and (max-width: 640px){
+        .movieTile{
+             width: 100% !important;
+        }
+
+    }
 
   @media screen and (max-width: 1060px){
 

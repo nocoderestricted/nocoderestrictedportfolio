@@ -79,22 +79,23 @@
 		<div>
 			<ul>
 				<li>
-					
-					<a href="#">
-						<img src="assets/images/temp2.jpg" title="#" alt="hi">
+					<cms:editable name="work1" name="work1_group" label="Work number 1" type="group"/>
+					<a href="<cms:editable name='work1_link' label='Link' type="text" group='work1_group'/>">
+						<img src="<cms:editable name='Work1_image' label='Image for work 1 (640x240)' type='image' group='work1_group' width='620' height='240'/>" title="#" alt="hi">
 						<div>
-							<h4><i class="fa fa-globe"></i>futurehitsonline.com</h4>
-							<p><span>Type:</span>Photography</p>
+							<h4><i class="fa fa-globe"></i><cms:editable name="site_name" label="Site name" type="text" group="work1_group"/></h4>
+							<p><span>Type:</span><cms:editable name="type_name" label="Type of website" type="text" group="work1_group"/></p>
 							<p><span>Colors:</span><span class="coloredsquare"></span><span class="coloredsquare"></span><span class="coloredsquare"></span></p>
 						</div>
 					</a>
 				</li>
 				<li>
-					<a href="#">
-						<img src="assets/images/temp.jpg" title="#" alt="hi">
+					<cms:editable name="work2_group" label="Work number 2" type="group"/>
+					<a href="<cms:editable name='work2_link' label='Link' type="text" group='work2_group'/>">
+						<img src="<cms:editable name='Work_image' label='Image for work 2 (640x240)' type='image' group='work2_group' width='620' height='240'/>" title="#" alt="hi">
 						<div>
-							<h4><i class="fa fa-globe"></i>empoweringwomenschatchew.com</h4>
-							<p><span>Type:</span>Photography</p>
+							<h4><i class="fa fa-globe"></i><cms:editable name="site_name_work" label="Site name" type="text" group="work2_group"/></h4>
+							<p><span>Type:</span><cms:editable name="type_name_work" label="Type of website" type="text" group="work2_group"/></p>
 							<p><span>Colors:</span><span class="coloredsquare"></span><span class="coloredsquare"></span><span class="coloredsquare"></span></p>
 						</div>
 
@@ -109,7 +110,7 @@
 								<p><span>Colors:</span><span class="coloredsquare"></span><span class="coloredsquare"></span><span class="coloredsquare"></span></p>
 
 							</div>
-					</a -->>
+					</a -->
 				</li>
 			</ul>
 		</div>
@@ -154,7 +155,7 @@
 	</div>
 		<div class="container">
 			
-			<cms:editable name="contact_intro" label="intro text" type="richtext">
+			<cms:editable name="contact_form" label="contact form text" type="richtext">
 				<p>Plese contact me</p>
 			</cms:editable>
 			
